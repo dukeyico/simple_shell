@@ -95,6 +95,7 @@ void expand_alias(data_of_program *data)
 /**
  * buffer_add - append string at end of the buffer
  * @buffer: buffer to be filled
+ *
  * @str_to_add: string to be copied in the buffer
  * Return: nothing, but sets errno.
  */
