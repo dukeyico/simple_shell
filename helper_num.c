@@ -5,7 +5,7 @@
  * @number: number to be converten in an string.
  * @string: buffer to save the number as string.
  * @base: base to convert number
- *
+ * updated string
  * Return: Nothing.
  */
 void long_to_string(long number, char *string, int base)
