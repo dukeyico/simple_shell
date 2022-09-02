@@ -5,6 +5,7 @@ int check_file(char *full_path);
 /**
  * find_program - find a program in path
  * @data: a pointer to the program's data
+ *
  * Return: 0 if success, errcode otherwise
  */
 
@@ -54,6 +55,7 @@ int find_program(data_of_program *data)
 /**
  * tokenize_path - tokenize the path in directories
  * @data: a pointer to the program's data
+ *
  * Return: array of path directories
  */
 
@@ -98,9 +100,10 @@ char **tokenize_path(data_of_program *data)
 }
 
 /**
- * check_file - checks if exists a file, if it is not a dairectory and
+ * check_file - checks if file exist, if it is not a directory and
  * if it has excecution permisions for permisions.
  * @full_path: pointer to the full file name
+ *
  * Return: 0 on success, or error code if it exists.
  */
 
@@ -117,7 +120,7 @@ int check_file(char *full_path)
 		}
 		return (0);
 	}
-	/*if not exist the file*/
+	/*if not exit the file*/
 	errno = 127;
 	return (127);
 }
